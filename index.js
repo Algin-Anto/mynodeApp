@@ -4,7 +4,7 @@ const cookieParser=require('cookie-parser');
 require('dotenv').config()
 const userRouter=require('./src/routes/UserRoutes');
 var path = require('path');
-const PORT=5000;
+const PORT=process.env.PORT ||5000;
 
 //Connect to database
 require('./src/config/db.js');
