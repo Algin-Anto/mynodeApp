@@ -17,6 +17,10 @@ app.get('/.well-known/assetlinks.json', (req, res) => {
     res.header("Content-Type",'application/json');
     res.sendFile(path.resolve('./assetlinks.json'));
 })
+app.get('/.well-known/apple-app-site-association', (req, res) => {
+    res.header("Content-Type",'application/json');
+    res.sendFile(path.resolve('./apple-app-site-association.json'));
+})
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());

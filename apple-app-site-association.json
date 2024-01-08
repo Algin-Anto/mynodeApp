@@ -1,0 +1,10 @@
+{   
+"applinks": {       
+"apps": [],
+       
+"details": [{           
+"appID": "PZ93F6RZR3.com.example.deeplink_with_flutter",           
+"paths": ["/api/red"]
+        		}]
+ }
+}
